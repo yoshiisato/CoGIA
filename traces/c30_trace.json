@@ -1,0 +1,118 @@
+{
+  "problem": {
+    "observed_c": [
+      30,
+      97,
+      52,
+      49,
+      51,
+      47,
+      53,
+      2
+    ],
+    "observed_t": [
+      70,
+      3,
+      48,
+      51,
+      49,
+      53,
+      47,
+      98
+    ],
+    "allele_patterns": {
+      "A01": "00000000",
+      "A02": "11111111",
+      "A03": "11001010",
+      "A04": "10110100",
+      "A05": "01100011",
+      "A06": "00011101",
+      "A07": "10101010",
+      "A08": "01110100",
+      "A09": "11010001",
+      "A10": "00101110",
+      "A11": "10000111",
+      "A12": "01011001"
+    }
+  },
+  "solution": {
+    "status": "optimal",
+    "selected_alleles": [
+      "A03",
+      "A08"
+    ],
+    "objective": 70.0
+  },
+  "scip_statistics": {
+    "total_nodes": 4,
+    "total_lp_iterations": 32
+  },
+  "trace": {
+    "nodes": [
+      {
+        "id": 1,
+        "parent_id": null,
+        "depth": 0,
+        "branch_decision": "root",
+        "focus_order": 0
+      },
+      {
+        "id": 2,
+        "parent_id": 1,
+        "depth": 1,
+        "branch_decision": "t_A08 <= 0",
+        "focus_order": 3
+      },
+      {
+        "id": 3,
+        "parent_id": 1,
+        "depth": 1,
+        "branch_decision": "t_A08 >= 1",
+        "focus_order": 1
+      },
+      {
+        "id": 4,
+        "parent_id": 3,
+        "depth": 2,
+        "branch_decision": "t_A03 <= 0"
+      },
+      {
+        "id": 5,
+        "parent_id": 3,
+        "depth": 2,
+        "branch_decision": "t_A03 >= 1",
+        "focus_order": 2
+      }
+    ],
+    "traversal": [
+      {
+        "order": 0,
+        "node_id": 1,
+        "open_nodes_excluding_focus": 0,
+        "frontier_size": 1,
+        "lp_iterations_cumulative": 0
+      },
+      {
+        "order": 1,
+        "node_id": 3,
+        "open_nodes_excluding_focus": 1,
+        "frontier_size": 2,
+        "lp_iterations_cumulative": 15
+      },
+      {
+        "order": 2,
+        "node_id": 5,
+        "open_nodes_excluding_focus": 2,
+        "frontier_size": 3,
+        "lp_iterations_cumulative": 29
+      },
+      {
+        "order": 3,
+        "node_id": 2,
+        "open_nodes_excluding_focus": 1,
+        "frontier_size": 2,
+        "lp_iterations_cumulative": 31
+      }
+    ]
+  }
+}
