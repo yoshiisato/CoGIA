@@ -1,0 +1,189 @@
+{
+  "problem": {
+    "observed_cn": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "gene_coverage": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "pseudo_coverage": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "configurations": {
+      "CN1": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "CN2": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "CN3": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "CN4": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "CN5": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "CN6": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "CN7": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "CN8": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "CN9": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "CN10": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "parsimony_scores": {
+      "CN1": 1.0,
+      "CN2": 2.0,
+      "CN3": 2.0,
+      "CN4": 3.0,
+      "CN5": 3.0,
+      "CN6": 4.0,
+      "CN7": 5.0,
+      "CN8": 2.0,
+      "CN9": 3.0,
+      "CN10": 3.0
+    }
+  },
+  "solution": {
+    "status": "optimal",
+    "selected_configurations": [
+      "CN1",
+      "CN7"
+    ],
+    "objective": 6.0,
+    "o1_coverage_error": 0.0,
+    "o2_interaction_error": 0.0,
+    "o3_parsimony": 6.0
+  },
+  "scip_statistics": {
+    "total_nodes": 1,
+    "total_lp_iterations": 7
+  },
+  "system_metrics": {
+    "total_time_ms": 1.8019676208496094,
+    "peak_memory_mb": 0.003337860107421875,
+    "final_memory_mb": 0.003162384033203125
+  },
+  "trace": {
+    "nodes": [
+      {
+        "id": 1,
+        "parent_id": null,
+        "depth": 0,
+        "branch_decision": "root",
+        "focus_order": 0
+      }
+    ],
+    "traversal": [
+      {
+        "order": 0,
+        "node_id": 1,
+        "open_nodes_excluding_focus": 0,
+        "frontier_size": 1,
+        "lp_iterations_cumulative": 0
+      }
+    ],
+    "memory_snapshots": [
+      {
+        "focus_order": 0,
+        "node_id": 1,
+        "memory_mb": 0.003055572509765625,
+        "peak_memory_mb": 0.003337860107421875,
+        "elapsed_time_ms": 0.9629726409912109
+      }
+    ]
+  }
+}

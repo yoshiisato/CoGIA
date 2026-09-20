@@ -1,0 +1,719 @@
+{
+  "problem": {
+    "observed_cn": [
+      75,
+      50,
+      50,
+      50,
+      20,
+      20,
+      20,
+      20
+    ],
+    "gene_coverage": [
+      75,
+      50,
+      50,
+      50
+    ],
+    "pseudo_coverage": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "configurations": {
+      "CN1": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "CN2": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "CN3": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "CN4": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "CN5": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "CN6": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "CN7": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "CN8": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "CN9": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "CN10": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "parsimony_scores": {
+      "CN1": 1.0,
+      "CN2": 2.0,
+      "CN3": 2.0,
+      "CN4": 3.0,
+      "CN5": 3.0,
+      "CN6": 4.0,
+      "CN7": 5.0,
+      "CN8": 2.0,
+      "CN9": 3.0,
+      "CN10": 3.0
+    }
+  },
+  "solution": {
+    "status": "optimal",
+    "selected_configurations": [
+      "CN1"
+    ],
+    "objective": 107.24226006191951,
+    "o1_coverage_error": 105.0,
+    "o2_interaction_error": 1.2422600619195046,
+    "o3_parsimony": 1.0
+  },
+  "scip_statistics": {
+    "total_nodes": 26,
+    "total_lp_iterations": 90
+  },
+  "system_metrics": {
+    "total_time_ms": 13.947725296020508,
+    "peak_memory_mb": 0.0400238037109375,
+    "final_memory_mb": 0.03993988037109375
+  },
+  "trace": {
+    "nodes": [
+      {
+        "id": 1,
+        "parent_id": null,
+        "depth": 0,
+        "branch_decision": "root",
+        "focus_order": 0
+      },
+      {
+        "id": 2,
+        "parent_id": 1,
+        "depth": 1,
+        "branch_decision": "t_z_CN2 <= 0",
+        "focus_order": 4
+      },
+      {
+        "id": 3,
+        "parent_id": 1,
+        "depth": 1,
+        "branch_decision": "t_z_CN2 >= 1",
+        "focus_order": 1
+      },
+      {
+        "id": 4,
+        "parent_id": 3,
+        "depth": 2,
+        "branch_decision": "t_z_CN3 <= 0",
+        "focus_order": 6
+      },
+      {
+        "id": 5,
+        "parent_id": 3,
+        "depth": 2,
+        "branch_decision": "t_z_CN3 >= 1",
+        "focus_order": 2
+      },
+      {
+        "id": 6,
+        "parent_id": 5,
+        "depth": 3,
+        "branch_decision": "t_z_CN7 <= 0",
+        "focus_order": 9
+      },
+      {
+        "id": 7,
+        "parent_id": 5,
+        "depth": 3,
+        "branch_decision": "t_z_CN7 >= 1",
+        "focus_order": 3
+      },
+      {
+        "id": 8,
+        "parent_id": 2,
+        "depth": 2,
+        "branch_decision": "t_z_CN7 <= 0",
+        "focus_order": 5
+      },
+      {
+        "id": 9,
+        "parent_id": 2,
+        "depth": 2,
+        "branch_decision": "t_z_CN7 >= 1",
+        "focus_order": 10
+      },
+      {
+        "id": 10,
+        "parent_id": 8,
+        "depth": 3,
+        "branch_decision": "t_z_CN6 <= 0",
+        "focus_order": 7
+      },
+      {
+        "id": 11,
+        "parent_id": 8,
+        "depth": 3,
+        "branch_decision": "t_z_CN6 >= 1",
+        "focus_order": 17
+      },
+      {
+        "id": 12,
+        "parent_id": 4,
+        "depth": 3,
+        "branch_decision": "t_z_CN8 <= 0",
+        "focus_order": 8
+      },
+      {
+        "id": 13,
+        "parent_id": 4,
+        "depth": 3,
+        "branch_decision": "t_z_CN8 >= 1",
+        "focus_order": 15
+      },
+      {
+        "id": 14,
+        "parent_id": 10,
+        "depth": 4,
+        "branch_decision": "t_z_CN9 <= 0",
+        "focus_order": 11
+      },
+      {
+        "id": 15,
+        "parent_id": 10,
+        "depth": 4,
+        "branch_decision": "t_z_CN9 >= 1",
+        "focus_order": 20
+      },
+      {
+        "id": 16,
+        "parent_id": 12,
+        "depth": 4,
+        "branch_decision": "t_z_CN7 <= 0",
+        "focus_order": 12
+      },
+      {
+        "id": 17,
+        "parent_id": 12,
+        "depth": 4,
+        "branch_decision": "t_z_CN7 >= 1",
+        "focus_order": 23
+      },
+      {
+        "id": 18,
+        "parent_id": 14,
+        "depth": 5,
+        "branch_decision": "t_z_CN5 <= 0",
+        "focus_order": 13
+      },
+      {
+        "id": 19,
+        "parent_id": 14,
+        "depth": 5,
+        "branch_decision": "t_z_CN5 >= 1",
+        "focus_order": 21
+      },
+      {
+        "id": 20,
+        "parent_id": 16,
+        "depth": 5,
+        "branch_decision": "t_z_CN6 <= 0",
+        "focus_order": 18
+      },
+      {
+        "id": 21,
+        "parent_id": 16,
+        "depth": 5,
+        "branch_decision": "t_z_CN6 >= 1"
+      },
+      {
+        "id": 22,
+        "parent_id": 18,
+        "depth": 6,
+        "branch_decision": "t_z_CN4 <= 0",
+        "focus_order": 14
+      },
+      {
+        "id": 23,
+        "parent_id": 18,
+        "depth": 6,
+        "branch_decision": "t_z_CN4 >= 1",
+        "focus_order": 22
+      },
+      {
+        "id": 24,
+        "parent_id": 22,
+        "depth": 7,
+        "branch_decision": "t_z_CN10 <= 0",
+        "focus_order": 19
+      },
+      {
+        "id": 25,
+        "parent_id": 22,
+        "depth": 7,
+        "branch_decision": "t_z_CN10 >= 1",
+        "focus_order": 24
+      },
+      {
+        "id": 26,
+        "parent_id": 13,
+        "depth": 4,
+        "branch_decision": "t_z_CN7 <= 0",
+        "focus_order": 16
+      },
+      {
+        "id": 27,
+        "parent_id": 13,
+        "depth": 4,
+        "branch_decision": "t_z_CN7 >= 1",
+        "focus_order": 25
+      }
+    ],
+    "traversal": [
+      {
+        "order": 0,
+        "node_id": 1,
+        "open_nodes_excluding_focus": 0,
+        "frontier_size": 1,
+        "lp_iterations_cumulative": 0
+      },
+      {
+        "order": 1,
+        "node_id": 3,
+        "open_nodes_excluding_focus": 1,
+        "frontier_size": 2,
+        "lp_iterations_cumulative": 10
+      },
+      {
+        "order": 2,
+        "node_id": 5,
+        "open_nodes_excluding_focus": 2,
+        "frontier_size": 3,
+        "lp_iterations_cumulative": 21
+      },
+      {
+        "order": 3,
+        "node_id": 7,
+        "open_nodes_excluding_focus": 3,
+        "frontier_size": 4,
+        "lp_iterations_cumulative": 24
+      },
+      {
+        "order": 4,
+        "node_id": 2,
+        "open_nodes_excluding_focus": 2,
+        "frontier_size": 3,
+        "lp_iterations_cumulative": 27
+      },
+      {
+        "order": 5,
+        "node_id": 8,
+        "open_nodes_excluding_focus": 3,
+        "frontier_size": 4,
+        "lp_iterations_cumulative": 29
+      },
+      {
+        "order": 6,
+        "node_id": 4,
+        "open_nodes_excluding_focus": 4,
+        "frontier_size": 5,
+        "lp_iterations_cumulative": 35
+      },
+      {
+        "order": 7,
+        "node_id": 10,
+        "open_nodes_excluding_focus": 5,
+        "frontier_size": 6,
+        "lp_iterations_cumulative": 36
+      },
+      {
+        "order": 8,
+        "node_id": 12,
+        "open_nodes_excluding_focus": 6,
+        "frontier_size": 7,
+        "lp_iterations_cumulative": 38
+      },
+      {
+        "order": 9,
+        "node_id": 6,
+        "open_nodes_excluding_focus": 7,
+        "frontier_size": 8,
+        "lp_iterations_cumulative": 42
+      },
+      {
+        "order": 10,
+        "node_id": 9,
+        "open_nodes_excluding_focus": 6,
+        "frontier_size": 7,
+        "lp_iterations_cumulative": 50
+      },
+      {
+        "order": 11,
+        "node_id": 14,
+        "open_nodes_excluding_focus": 5,
+        "frontier_size": 6,
+        "lp_iterations_cumulative": 58
+      },
+      {
+        "order": 12,
+        "node_id": 16,
+        "open_nodes_excluding_focus": 6,
+        "frontier_size": 7,
+        "lp_iterations_cumulative": 60
+      },
+      {
+        "order": 13,
+        "node_id": 18,
+        "open_nodes_excluding_focus": 7,
+        "frontier_size": 8,
+        "lp_iterations_cumulative": 65
+      },
+      {
+        "order": 14,
+        "node_id": 22,
+        "open_nodes_excluding_focus": 8,
+        "frontier_size": 9,
+        "lp_iterations_cumulative": 69
+      },
+      {
+        "order": 15,
+        "node_id": 13,
+        "open_nodes_excluding_focus": 9,
+        "frontier_size": 10,
+        "lp_iterations_cumulative": 70
+      },
+      {
+        "order": 16,
+        "node_id": 26,
+        "open_nodes_excluding_focus": 10,
+        "frontier_size": 11,
+        "lp_iterations_cumulative": 72
+      },
+      {
+        "order": 17,
+        "node_id": 11,
+        "open_nodes_excluding_focus": 9,
+        "frontier_size": 10,
+        "lp_iterations_cumulative": 78
+      },
+      {
+        "order": 18,
+        "node_id": 20,
+        "open_nodes_excluding_focus": 8,
+        "frontier_size": 9,
+        "lp_iterations_cumulative": 83
+      },
+      {
+        "order": 19,
+        "node_id": 24,
+        "open_nodes_excluding_focus": 7,
+        "frontier_size": 8,
+        "lp_iterations_cumulative": 84
+      },
+      {
+        "order": 20,
+        "node_id": 15,
+        "open_nodes_excluding_focus": 5,
+        "frontier_size": 6,
+        "lp_iterations_cumulative": 86
+      },
+      {
+        "order": 21,
+        "node_id": 19,
+        "open_nodes_excluding_focus": 4,
+        "frontier_size": 5,
+        "lp_iterations_cumulative": 88
+      },
+      {
+        "order": 22,
+        "node_id": 23,
+        "open_nodes_excluding_focus": 3,
+        "frontier_size": 4,
+        "lp_iterations_cumulative": 90
+      },
+      {
+        "order": 23,
+        "node_id": 17,
+        "open_nodes_excluding_focus": 2,
+        "frontier_size": 3,
+        "lp_iterations_cumulative": 90
+      },
+      {
+        "order": 24,
+        "node_id": 25,
+        "open_nodes_excluding_focus": 1,
+        "frontier_size": 2,
+        "lp_iterations_cumulative": 90
+      },
+      {
+        "order": 25,
+        "node_id": 27,
+        "open_nodes_excluding_focus": 0,
+        "frontier_size": 1,
+        "lp_iterations_cumulative": 90
+      }
+    ],
+    "memory_snapshots": [
+      {
+        "focus_order": 0,
+        "node_id": 1,
+        "memory_mb": 0.003055572509765625,
+        "peak_memory_mb": 0.003337860107421875,
+        "elapsed_time_ms": 7.75599479675293
+      },
+      {
+        "focus_order": 1,
+        "node_id": 3,
+        "memory_mb": 0.0048427581787109375,
+        "peak_memory_mb": 0.0052089691162109375,
+        "elapsed_time_ms": 10.263919830322266
+      },
+      {
+        "focus_order": 2,
+        "node_id": 5,
+        "memory_mb": 0.0067291259765625,
+        "peak_memory_mb": 0.00717926025390625,
+        "elapsed_time_ms": 10.425090789794922
+      },
+      {
+        "focus_order": 3,
+        "node_id": 7,
+        "memory_mb": 0.008897781372070312,
+        "peak_memory_mb": 0.009401321411132812,
+        "elapsed_time_ms": 10.530948638916016
+      },
+      {
+        "focus_order": 4,
+        "node_id": 2,
+        "memory_mb": 0.009401321411132812,
+        "peak_memory_mb": 0.009820938110351562,
+        "elapsed_time_ms": 10.78176498413086
+      },
+      {
+        "focus_order": 5,
+        "node_id": 8,
+        "memory_mb": 0.009555816650390625,
+        "peak_memory_mb": 0.010499954223632812,
+        "elapsed_time_ms": 11.108875274658203
+      },
+      {
+        "focus_order": 6,
+        "node_id": 4,
+        "memory_mb": 0.011220932006835938,
+        "peak_memory_mb": 0.011747360229492188,
+        "elapsed_time_ms": 11.230945587158203
+      },
+      {
+        "focus_order": 7,
+        "node_id": 10,
+        "memory_mb": 0.0126190185546875,
+        "peak_memory_mb": 0.0132293701171875,
+        "elapsed_time_ms": 11.425971984863281
+      },
+      {
+        "focus_order": 8,
+        "node_id": 12,
+        "memory_mb": 0.014505386352539062,
+        "peak_memory_mb": 0.015169143676757812,
+        "elapsed_time_ms": 11.570930480957031
+      },
+      {
+        "focus_order": 9,
+        "node_id": 6,
+        "memory_mb": 0.016834259033203125,
+        "peak_memory_mb": 0.017551422119140625,
+        "elapsed_time_ms": 11.701822280883789
+      },
+      {
+        "focus_order": 10,
+        "node_id": 9,
+        "memory_mb": 0.017658233642578125,
+        "peak_memory_mb": 0.018321990966796875,
+        "elapsed_time_ms": 11.904001235961914
+      },
+      {
+        "focus_order": 11,
+        "node_id": 14,
+        "memory_mb": 0.018482208251953125,
+        "peak_memory_mb": 0.019092559814453125,
+        "elapsed_time_ms": 12.067079544067383
+      },
+      {
+        "focus_order": 12,
+        "node_id": 16,
+        "memory_mb": 0.021009445190429688,
+        "peak_memory_mb": 0.021673202514648438,
+        "elapsed_time_ms": 12.20393180847168
+      },
+      {
+        "focus_order": 13,
+        "node_id": 18,
+        "memory_mb": 0.02353668212890625,
+        "peak_memory_mb": 0.02425384521484375,
+        "elapsed_time_ms": 12.325763702392578
+      },
+      {
+        "focus_order": 14,
+        "node_id": 22,
+        "memory_mb": 0.026575088500976562,
+        "peak_memory_mb": 0.027376174926757812,
+        "elapsed_time_ms": 12.444734573364258
+      },
+      {
+        "focus_order": 15,
+        "node_id": 13,
+        "memory_mb": 0.029104232788085938,
+        "peak_memory_mb": 0.029989242553710938,
+        "elapsed_time_ms": 12.550830841064453
+      },
+      {
+        "focus_order": 16,
+        "node_id": 26,
+        "memory_mb": 0.0316314697265625,
+        "peak_memory_mb": 0.03260040283203125,
+        "elapsed_time_ms": 12.656927108764648
+      },
+      {
+        "focus_order": 17,
+        "node_id": 11,
+        "memory_mb": 0.0325775146484375,
+        "peak_memory_mb": 0.0334625244140625,
+        "elapsed_time_ms": 12.720823287963867
+      },
+      {
+        "focus_order": 18,
+        "node_id": 20,
+        "memory_mb": 0.0334014892578125,
+        "peak_memory_mb": 0.03417205810546875,
+        "elapsed_time_ms": 12.820005416870117
+      },
+      {
+        "focus_order": 19,
+        "node_id": 24,
+        "memory_mb": 0.0342254638671875,
+        "peak_memory_mb": 0.034942626953125,
+        "elapsed_time_ms": 12.887954711914062
+      },
+      {
+        "focus_order": 20,
+        "node_id": 15,
+        "memory_mb": 0.03507232666015625,
+        "peak_memory_mb": 0.03568267822265625,
+        "elapsed_time_ms": 12.978792190551758
+      },
+      {
+        "focus_order": 21,
+        "node_id": 19,
+        "memory_mb": 0.0359649658203125,
+        "peak_memory_mb": 0.03649139404296875,
+        "elapsed_time_ms": 13.051748275756836
+      },
+      {
+        "focus_order": 22,
+        "node_id": 23,
+        "memory_mb": 0.03685760498046875,
+        "peak_memory_mb": 0.03733062744140625,
+        "elapsed_time_ms": 13.115882873535156
+      },
+      {
+        "focus_order": 23,
+        "node_id": 17,
+        "memory_mb": 0.037750244140625,
+        "peak_memory_mb": 0.03816986083984375,
+        "elapsed_time_ms": 13.167858123779297
+      },
+      {
+        "focus_order": 24,
+        "node_id": 25,
+        "memory_mb": 0.03864288330078125,
+        "peak_memory_mb": 0.03900909423828125,
+        "elapsed_time_ms": 13.599872589111328
+      },
+      {
+        "focus_order": 25,
+        "node_id": 27,
+        "memory_mb": 0.0396575927734375,
+        "peak_memory_mb": 0.03993988037109375,
+        "elapsed_time_ms": 13.843774795532227
+      }
+    ]
+  }
+}
